@@ -1,0 +1,381 @@
+body{
+ background-color: black;
+ overflow-x: hidden;                                      
+}
+
+section{
+    margin: auto;
+}
+.navbar-toggler{
+    float: right;   
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.navbar-brand{
+    float: left;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.name{
+    margin-left: 70px;
+    font-size: 20px;
+    color: rgb(212, 211, 211);
+}
+
+.name:hover{
+   background: linear-gradient(to bottom, green, darkgreen);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+
+.bi-facebook:hover{
+    color: rgb(15, 100, 228);
+}
+
+.bi-telegram:hover{
+    color: rgb(103, 149, 219);
+}
+
+.bi-whatsapp:hover{
+    color: rgb(67, 119, 16);
+}
+
+.bi-github:hover{
+    color: rgb(110, 76, 145);
+}
+
+.bi{
+  color: rgb(212, 211, 211);
+  font-size: 20px;
+}
+
+.bi-list{
+    -webkit-text-stroke: 2px;
+    font-size: 20px;
+}
+
+.navbar{
+    background-color: black;
+}
+
+#HomeBlock{
+    color: rgb(212, 211, 211);
+    font-size: 36px;
+    font-weight: 700;
+    background-image: url(../img/HomeBg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#HomeBlock>*{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contactLink{
+    font-size: 14px;
+    float: left;
+    margin-left: 12%;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    background-color: transparent;
+    color:rgb(212, 211, 211) ;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 3px solid green;
+}
+
+.welcome{
+    margin-left: 11%;
+    margin-top: 10%;
+}
+
+#Fullname{
+    text-decoration: underline 5px green;
+}
+
+#Intro{
+    font-size: 23px;
+    color: rgba(212, 211, 211, 0.705);
+    font-weight: 500;
+    border: 2px solid transparent;
+}
+
+#MyPhoto{
+   margin-left: 20px; 
+}
+
+hr{
+    background-color: rgb(231, 231, 231);
+    height: 1px;
+    width: 86%;
+    border-radius: 3px;
+}
+
+#Experience{
+ 
+    color:rgb(231, 231, 231);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.skill{
+    margin-left: 6%;
+    gap: 10%;
+}
+
+.Lang{
+    font-size: 20px;
+}
+
+h1{
+    font-weight: 900;
+    color:rgb(231, 231, 231) ;
+    margin-left: 7%;
+    font-size: 38px;
+}
+
+#contact2{
+    float: right;
+    margin-top: -30px;
+}
+
+.Project-cards{
+    display: flex;
+    gap: 3%;
+    margin-left: 7%;
+}
+
+.card{
+    width: 28.5%;
+    height: 325px;
+    background-color: black;
+    border: 2px solid rgb(231, 231, 231);
+    color: rgb(231, 231, 231);
+    font-size: 14px;
+}
+
+.card:hover{
+   opacity: 0.6;
+   transform: scale(1.1);
+}
+
+#contact{
+    color: rgb(231, 231, 231);
+    margin-top: 150px;
+    background-color: rgb(38, 38, 38);
+    width: 100%;
+    font-size: 13px;
+}
+
+.LabelText{
+    margin-left: 0%;
+    margin-top: 10%;
+}
+
+.form-input{
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    padding: 5px;
+    color: rgb(231, 231, 231);
+    font-weight: 600px;
+    font-size: 14px;
+    border-bottom: 2px solid grey;
+    width: 100%;
+}
+
+.form-input:focus{
+    outline: none;
+}
+
+.form{
+    margin-top: 12%;
+}
+
+.contactRow{
+    gap: 10%;
+}
+
+#send{
+    margin-left: 65%;
+}
+
+.footerLink{
+    width: max-content;
+    margin-left: 0%;
+}
+
+.footer{
+    margin-left: 7%;
+    width: 86%;
+}
+
+.social{
+    float: right;
+    margin-top: -30px;
+}
+
+.skill>div{
+    margin-top: 45px;
+}
+
+.Empty::-webkit-input-placeholder{
+    color: rgba(255, 0, 0, 0.887);
+    font-weight: 600;
+}
+
+.Empty::placeholder{
+    color: rgba(255, 0, 0, 0.887);
+    font-weight: 600;
+}
+
+
+
+@media screen and (min-width:990px) and (max-width:1208px) {
+    #send{
+        margin-left: 55%;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    #send{
+        margin-left: 0%;
+    }
+
+    #image{
+        visibility:hidden;
+        height: 0px;
+        width: 0px;
+    }
+
+    .card{
+        height: 280px;
+    }
+
+    .name{
+        margin-left: 2%;
+    }
+
+    #HomeBlock{
+        background-image: url(../img/Sm_HomeBg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #HomeBlock>div{
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+
+}
+
+@media screen and (max-width:799px) {
+    
+    .Project-cards{
+      display: block;
+      justify-content: center;
+      margin-left: 15%;
+    }
+
+    .Project-cards>div{
+        width: 85%;
+        margin-top: 25px;
+    }
+
+    #Block2{
+        margin-top: -42px;
+    }
+    
+}
+
+@media screen  and (max-width:600px) {
+    #Intro{
+        font-size:20px;
+    }
+    
+    #HomeBlock{
+        font-size:32px;
+    }
+
+    .name{
+        font-size: 17px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+    .skill>div{
+       text-align: center;
+       margin-left: -5%;
+    }
+
+    #HomeBlock{
+        font-size:24px;
+    }
+
+    #Intro{
+        font-size:16px;
+    }
+
+    .name{
+        font-size: 14px;
+    }
+
+    .contactLink{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .name{
+        font-size: 12px;
+    }
+
+    #Intro{
+        font-size:12px;
+    }
+
+    .bi{
+        font-size: 12px; 
+    }
+
+    .bi-list{
+        -webkit-text-stroke: 1px;
+        font-size: 14px;
+    }
+
+    .social{
+        margin-top: -6%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .footerLink{
+        visibility: hidden;
+    }
+     
+    .social{
+        margin-right: 20%;
+    }
+
+    .card{
+        height: 350px;
+    }
+    #Intro{
+        font-size: 11px;
+    }
+}
+
